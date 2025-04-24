@@ -1,7 +1,7 @@
 
 import Navbar from '../components/Navbar';
 import ServiceCard from '../components/ServiceCard';
-import { Clock, Syringe, Hospital, BriefcaseMedical, MedicinePill, Bandage } from 'lucide-react';
+import { Clock, Syringe, Hospital, BriefcaseMedical, Pill, Bandage, UserRound, HeartPulse } from 'lucide-react';
 
 const Index = () => {
   const services = [
@@ -33,7 +33,7 @@ const Index = () => {
     {
       title: "Mother Baby Care",
       description: "Specialized care services for mothers and newborns",
-      icon: MedicinePill
+      icon: Pill
     }
   ];
 
@@ -84,11 +84,11 @@ const Index = () => {
               <h3 className="text-2xl font-semibold mb-4">Why Choose Hope Home Care?</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <User className="h-5 w-5 text-[#4A7C7C] mr-2" />
+                  <UserRound className="h-5 w-5 text-[#4A7C7C] mr-2" />
                   <span>Certified and verified healthcare professionals</span>
                 </li>
                 <li className="flex items-center">
-                  <Heart className="h-5 w-5 text-[#4A7C7C] mr-2" />
+                  <HeartPulse className="h-5 w-5 text-[#4A7C7C] mr-2" />
                   <span>Personalized care plans for each patient</span>
                 </li>
                 <li className="flex items-center">
