@@ -43,7 +43,15 @@ const Index = () => {
       
       {/* Hero Section */}
       <div className="relative bg-[#4A7C7C] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/eb77485c-d703-4c8e-a445-250876f606e1.png"
+            alt="Hero Background"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-[#4A7C7C] opacity-75"></div>
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="md:w-2/3">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Professional Home Healthcare Services in Kathmandu
