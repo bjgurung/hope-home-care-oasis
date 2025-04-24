@@ -1,7 +1,7 @@
 
 import Navbar from '../components/Navbar';
 import ServiceCard from '../components/ServiceCard';
-import { Clock, Doctor, Hospital, MedKit, Heart, User } from 'lucide-react';
+import { Clock, Syringe, Hospital, BriefcaseMedical, MedicinePill, Bandage } from 'lucide-react';
 
 const Index = () => {
   const services = [
@@ -13,12 +13,12 @@ const Index = () => {
     {
       title: "Doctor Consultation",
       description: "Expert medical consultation and regular health check-ups",
-      icon: Doctor
+      icon: BriefcaseMedical
     },
     {
       title: "Physiotherapy Service",
       description: "Professional physiotherapy treatments for rehabilitation and recovery",
-      icon: MedKit
+      icon: Bandage
     },
     {
       title: "Lab Test",
@@ -28,12 +28,12 @@ const Index = () => {
     {
       title: "Equipment Rental",
       description: "Medical equipment rental service for home healthcare needs",
-      icon: MedKit
+      icon: Syringe
     },
     {
       title: "Mother Baby Care",
       description: "Specialized care services for mothers and newborns",
-      icon: Heart
+      icon: MedicinePill
     }
   ];
 
