@@ -1,4 +1,3 @@
-
 import Navbar from '../components/Navbar';
 import ServiceCard from '../components/ServiceCard';
 import { Clock, Syringe, Hospital, BriefcaseMedical, Pill, Bandage, UserRound, HeartPulse } from 'lucide-react';
@@ -109,48 +108,26 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">About Us</h2>
             <div className="h-1 w-24 bg-[#4A7C7C] mx-auto rounded-full"></div>
           </div>
-          <div className="md:flex items-center justify-between gap-12">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <Card className="border-none shadow-lg">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold mb-6 text-[#4A7C7C]">Why Choose Hope Home Care?</h3>
-                  <ul className="space-y-6">
-                    <li className="flex items-center bg-gray-50 p-4 rounded-lg shadow-sm">
-                      <div className="bg-[#4A7C7C] p-3 rounded-full mr-4">
-                        <UserRound className="h-6 w-6 text-white" />
-                      </div>
-                      <span className="text-gray-700">Certified and verified healthcare professionals</span>
-                    </li>
-                    <li className="flex items-center bg-gray-50 p-4 rounded-lg shadow-sm">
-                      <div className="bg-[#4A7C7C] p-3 rounded-full mr-4">
-                        <HeartPulse className="h-6 w-6 text-white" />
-                      </div>
-                      <span className="text-gray-700">Personalized care plans for each patient</span>
-                    </li>
-                    <li className="flex items-center bg-gray-50 p-4 rounded-lg shadow-sm">
-                      <div className="bg-[#4A7C7C] p-3 rounded-full mr-4">
-                        <Clock className="h-6 w-6 text-white" />
-                      </div>
-                      <span className="text-gray-700">24/7 availability for emergency care</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="md:w-1/2">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img 
-                  src="/lovable-uploads/eb77485c-d703-4c8e-a445-250876f606e1.png"
-                  alt="Hope Home Care Service"
-                  className="w-full h-[400px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#4A7C7C]/70 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-white text-2xl font-bold">Compassionate Care</h3>
-                  <p className="text-white/90">We treat our patients like family</p>
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-none shadow-lg">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold mb-6 text-[#4A7C7C]">Welcome to Hope Home Care</h3>
+                <div className="space-y-4 text-gray-600 leading-relaxed">
+                  <p>
+                    We provide reliable nursing services at patient's home which involves basic and professional care.
+                  </p>
+                  <p>
+                    Nursing care service distinctly is needed for elderly care, post-surgical care, and chronic illness disables care or cognitively impaired care. Hence, when in need of such assistance, you can rely on Hope Home Care because Hope Home Care aids you with the best intervention of Nursing care services in Kathmandu, with the process of outstanding selection method.
+                  </p>
+                  <p>
+                    Heal Home Care enrolls completely certified and verified nurses for the nursing home care service. This assistance helps patients in recovering at greater pace as they are served in their comfort zone.
+                  </p>
+                  <p>
+                    Hope Home Care pioneer aim in providing home nursing service is to assert that the person can live in an independent environment in their own home with their beloved family members. The continuous care under our expert nurses provides an assurance to the patients about their safety. The service is customized according to the need of the patients.
+                  </p>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
