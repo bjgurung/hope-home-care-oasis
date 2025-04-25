@@ -48,22 +48,13 @@ const ServicesSection = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
-              key={service.title} 
-              className="transform transition-all duration-300 hover:-translate-y-2"
-              style={{
-                animationDelay: `${index * 100}ms`,
-                animationFillMode: 'forwards',
-                opacity: 0,
-                animation: 'fade-in 0.5s ease-out forwards'
-              }}
-            >
-              <ServiceCard
-                title={service.title}
-                description={service.description}
-                icon={service.icon}
-              />
-            </div>
+            <ServiceCard
+              key={service.title}
+              title={service.title}
+              description={service.description}
+              icon={service.icon}
+              index={index}
+            />
           ))}
         </div>
       </div>
