@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -11,14 +10,14 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative h-[80vh] overflow-hidden">
+    <div className="relative min-h-screen w-full">
       <img 
         src="/lovable-uploads/eb77485c-d703-4c8e-a445-250876f606e1.png"
         alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-[#1A1F2C]/90 to-[#4A7C7C]/70"></div>
-      <div className="relative h-full flex items-center">
+      <div className="relative h-full flex items-center min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="md:w-2/3">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
