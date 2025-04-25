@@ -1,3 +1,4 @@
+
 import Navbar from '../components/Navbar';
 import ServiceCard from '../components/ServiceCard';
 import { Clock, Syringe, Hospital, BriefcaseMedical, Pill, Bandage, UserRound, HeartPulse } from 'lucide-react';
@@ -67,10 +68,17 @@ const Index = () => {
                 Providing reliable nursing services with basic and professional care in the comfort of your home.
               </p>
               <div className="flex gap-4">
-                <Button className="bg-white text-[#4A7C7C] hover:bg-gray-100 px-8 py-6 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                <Button 
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="bg-white text-[#4A7C7C] hover:bg-gray-100 px-8 py-6 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                >
                   Contact Us
                 </Button>
-                <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 px-8 py-6 rounded-full font-semibold transition-all">
+                <Button 
+                  variant="outline" 
+                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="bg-transparent border-white text-white hover:bg-white/10 px-8 py-6 rounded-full font-semibold transition-all"
+                >
                   Our Services
                 </Button>
               </div>
@@ -80,7 +88,7 @@ const Index = () => {
       </div>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Services</h2>
@@ -89,7 +97,16 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={service.title} className={`hover-scale transition-all duration-300 delay-${index * 100}`}>
+              <div 
+                key={service.title} 
+                className="transform transition-all duration-300 hover:-translate-y-2"
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                  animationFillMode: 'forwards',
+                  opacity: 0,
+                  animation: 'fade-in 0.5s ease-out forwards'
+                }}
+              >
                 <ServiceCard
                   title={service.title}
                   description={service.description}

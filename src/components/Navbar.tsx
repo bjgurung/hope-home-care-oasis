@@ -22,6 +22,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleGetStarted = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +41,10 @@ const Navbar = () => {
             <a href="#services" className={`${isScrolled ? 'text-gray-600 hover:text-[#4A7C7C]' : 'text-white hover:text-white/80'} transition-colors`}>Services</a>
             <a href="#about" className={`${isScrolled ? 'text-gray-600 hover:text-[#4A7C7C]' : 'text-white hover:text-white/80'} transition-colors`}>About</a>
             <a href="#contact" className={`${isScrolled ? 'text-gray-600 hover:text-[#4A7C7C]' : 'text-white hover:text-white/80'} transition-colors`}>Contact</a>
-            <Button className={`${isScrolled ? 'bg-[#4A7C7C] text-white' : 'bg-white text-[#4A7C7C]'} rounded-full px-6`}>
+            <Button 
+              onClick={handleGetStarted}
+              className={`${isScrolled ? 'bg-[#4A7C7C] text-white' : 'bg-white text-[#4A7C7C]'} rounded-full px-6`}
+            >
               Get Started
             </Button>
           </div>
@@ -58,7 +68,10 @@ const Navbar = () => {
             <a href="#about" className="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-[#4A7C7C]">About</a>
             <a href="#contact" className="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-[#4A7C7C]">Contact</a>
             <div className="px-3 py-2">
-              <Button className="w-full bg-[#4A7C7C] text-white rounded-full">
+              <Button 
+                onClick={handleGetStarted}
+                className="w-full bg-[#4A7C7C] text-white rounded-full"
+              >
                 Get Started
               </Button>
             </div>
