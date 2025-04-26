@@ -51,10 +51,21 @@ const Footer = () => {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
                 <li>
-                  <div className="hover:text-white transition-colors cursor-pointer">
-                    Careers
-                    <span className="ml-2 text-xs bg-[#4A7C7C] px-2 py-1 rounded-full">Hiring</span>
-                  </div>
+                  <h4 className="text-white mb-2">Work with us</h4>
+                  <p className="text-sm text-gray-400 mb-2">
+                    We are looking for trustworthy and compassionate healthcare professionals to join our team. We provide care while offering emotional support to patients and their families.
+                  </p>
+                  <p className="text-sm text-gray-400 mb-2">
+                    Currently hiring:
+                  </p>
+                  <ul className="list-disc pl-4 text-sm text-gray-400 mb-2">
+                    <li>Nurses</li>
+                    <li>Nursing Assistants (ANM/Care Giver)</li>
+                    <li>Physiotherapists</li>
+                  </ul>
+                  <p className="text-sm text-gray-400">
+                    Send your CV to: <a href="mailto:info@hopehomecare.com" className="text-[#4A7C7C] hover:text-white">info@hopehomecare.com</a>
+                  </p>
                 </li>
                 <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
                 <li><a href="#team" className="hover:text-white transition-colors">Our Team</a></li>
@@ -63,17 +74,21 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <ul className="space-y-3 text-gray-400">
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5" />
-                  <span>Kathmandu, Nepal</span>
+                <li className="flex items-start gap-2">
+                  <MapPin className="h-5 w-5 mt-1" />
+                  <span>Basundhara, Kathmandu, Nepal</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
-                  <span>+977 1234567890</span>
+                <li className="flex items-start gap-2">
+                  <Phone className="h-5 w-5 mt-1" />
+                  <div>
+                    <div>01-5915197</div>
+                    <div>9851216996</div>
+                    <div>9851105197</div>
+                  </div>
                 </li>
-                <li className="flex items-center gap-2">
-                  <Mail className="h-5 w-5" />
-                  <span>info@hopehomecare.com</span>
+                <li className="flex items-start gap-2">
+                  <Mail className="h-5 w-5 mt-1" />
+                  <span>info@hopecare.com.np</span>
                 </li>
               </ul>
             </div>
