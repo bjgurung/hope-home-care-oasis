@@ -1,5 +1,4 @@
-
-import { HeartPulse, Facebook, Twitter, MapPin, Phone, Mail } from 'lucide-react';
+import { Facebook, Twitter, MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,7 +7,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-8 md:mb-0">
             <div className="flex items-center">
-              <HeartPulse className="h-8 w-8 text-[#4A7C7C]" />
+              <img 
+                src="/lovable-uploads/3419bc39-d39b-4364-8fe8-c798c44c6901.png" 
+                alt="Hope Home Care Logo" 
+                className="h-12 w-12 brightness-200"
+              />
               <span className="ml-2 text-xl font-semibold">Hope Home Care</span>
             </div>
             <p className="mt-4 text-gray-400 max-w-xs">

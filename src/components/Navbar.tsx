@@ -1,6 +1,4 @@
-
 import { useState, useEffect } from 'react';
-import { Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -34,7 +32,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Heart className={`h-8 w-8 ${isScrolled ? 'text-[#4A7C7C]' : 'text-white'}`} />
+            <img 
+              src="/lovable-uploads/3419bc39-d39b-4364-8fe8-c798c44c6901.png" 
+              alt="Hope Home Care Logo" 
+              className={`h-12 w-12 ${isScrolled ? 'brightness-100' : 'brightness-200'}`}
+            />
             <span className={`ml-2 text-xl font-semibold ${isScrolled ? 'text-[#4A7C7C]' : 'text-white'}`}>Hope Home Care</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
