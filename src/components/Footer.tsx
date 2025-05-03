@@ -1,4 +1,6 @@
+
 import { Facebook, Twitter, MapPin, Phone, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -51,21 +53,10 @@ const Footer = () => {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
                 <li>
-                  <h4 className="text-white mb-2">Work with us</h4>
-                  <p className="text-sm text-gray-400 mb-2">
-                    We are looking for trustworthy and compassionate healthcare professionals to join our team. We provide care while offering emotional support to patients and their families.
-                  </p>
-                  <p className="text-sm text-gray-400 mb-2">
-                    Currently hiring:
-                  </p>
-                  <ul className="list-disc pl-4 text-sm text-gray-400 mb-2">
-                    <li>Nurses</li>
-                    <li>Nursing Assistants (ANM/Care Giver)</li>
-                    <li>Physiotherapists</li>
-                  </ul>
-                  <p className="text-sm text-gray-400">
-                    Send your CV to: <a href="mailto:info@hopehomecare.com" className="text-[#4A7C7C] hover:text-white">info@hopehomecare.com</a>
-                  </p>
+                  <Link to="/careers" className="hover:text-white transition-colors flex items-center">
+                    <span className="mr-2">Careers</span>
+                    <span className="bg-[#4A7C7C] text-white text-xs px-2 py-0.5 rounded-full">Hiring</span>
+                  </Link>
                 </li>
                 <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
                 <li><a href="#team" className="hover:text-white transition-colors">Our Team</a></li>
