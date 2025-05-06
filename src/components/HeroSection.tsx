@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <div className="relative h-[85vh] w-full overflow-hidden">
       <img 
-        src="/lovable-uploads/eb77485c-d703-4c8e-a445-250876f606e1.png"
+        src="/lovable-uploads/ed220fcd-9515-452b-9ade-6891fcb7c0de.png"
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
